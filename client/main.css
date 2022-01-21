@@ -1,0 +1,84 @@
+#outer {
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    grid-gap: 50px;
+    width: auto;
+    height: auto;
+}
+
+/* .div {
+    width: 90px;
+    flex: 0 0 50px;
+    margin: 5px;
+} */
+
+body { 
+    text-align: center;
+   }
+  .board {
+    margin: auto;
+    width: 350px;
+    /* float: right; */
+    margin-top: 100px;
+  }
+  .board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+  }
+
+.scoreboard {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 300px;
+	font-family: 'Quicksand', sans-serif;
+    margin-top: 200px;
+}
+
+.scoreboard__name,
+.scoreboard__score {
+	padding: 10px;
+	text-align: center;
+}
+
+.scoreboard__name {
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+}
+
+.scoreboard__name--one {
+	color: #009578;
+}
+
+.scoreboard__name--two {
+	color: #2d0095;
+}
+
+.scoreboard__score {
+	font-size: 2em;
+}
+
+.scoreboard__controls {
+	display: flex;
+}
+
+.scoreboard__control-button {
+	flex-grow: 1;
+	border: none;
+	background: #eee;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.scoreboard__control-button:hover {
+	background: #ddd;
+}
+
+.scoreboard__control-button:active {
+	background: #ccc;
+}
